@@ -68,4 +68,10 @@
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
   }
+  .header_logo{
+    background: rgb(213,2,172);
+background: linear-gradient(90deg, rgba(213,2,172,1) 55%, rgba(126,119,236,1) 73%);
+			-webkit-text-fill-color: transparent;
+			-webkit-background-clip: text;
+  }
 }
