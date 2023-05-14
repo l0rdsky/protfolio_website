@@ -12,8 +12,8 @@ const Banner = () => {
         <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center
         lg:gap-x-12">
           {/*text*/}
-          <div className="flex-1 text-center font-secondary lg:text-left">
-            <h1 className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
+          <div className="flex-1 text-center m-auto font-secondary lg:text-left">
+            <h1 className="text-[50px] gap-x-5 font-bold leading-[0.8] mb-4 lg:text-[90px]">
               AKASH <span>PAWAR</span>
             </h1>
             <div className="mb-6 text-[36px] lg:text-[60px] font-secondary
@@ -34,13 +34,13 @@ const Banner = () => {
                 repeat={Infinity}
               />
             </div>
-            <p className="mb-8 max-w-lg mx-auto">
+            <p className="mb-8 max-w-lg ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
               </p>
-              <div className="flex max-w-max gap-x-6 items-center mb-12">
-                <button className="btn btn-lg">Contact me</button>
+              <div className="flex mx-auto max-w-max gap-x-6 items-center mb-12">
+                <button className="btn  btn-lg">Contact me</button>
                 <a href="#" className="text-gradient btn-link">My Portfolio</a> 
               </div>
               <div className="flex text-[20px] gap-x-6 mx-auto max-w-max" >
