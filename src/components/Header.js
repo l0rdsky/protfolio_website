@@ -2,7 +2,7 @@ import React from 'react';
 import Logo from '../assets/logo.svg'
 const Header = () => {
   return(
-    <header className='py-8'>
+    <header id='home' className='py-8'>
        <div className='container mx-auto flex items-center justify-between '>
            <a href='#' className='font-tertiary relative text-4xl header_logo'>
            Akash</a>
