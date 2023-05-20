@@ -16,15 +16,17 @@ const Banner = () => {
           {/*text*/}
           <div className="flex-1 text-center m-auto font-secondary lg:text-left">
             <motion.h1
-              variants={fadeIn("up", 0.3)}
-              intial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.7 }}
-              className="text-[50px] gap-x-5 font-bold leading-[0.8] mb-4 lg:text-[90px]"
+            initial={{y:50,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{delay:0.3,duration:1,type:"spring",stiffness:150}}
+            className="text-[50px] gap-x-5 font-bold leading-[0.8] mb-4 lg:text-[90px]"
             >
               AKASH <span>PAWAR</span>
             </motion.h1>
-            <div
+            <motion.div
+            initial={{y:50,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{delay:0.5,duration:1,type:"spring",stiffness:150}}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary
             font-semibold uppercase leading-1"
             >
@@ -43,19 +45,31 @@ const Banner = () => {
                 wrapper="span"
                 repeat={Infinity}
               />
-            </div>
-            <p className="mb-8 max-w-lg ">
+            </motion.div>
+            <motion.p
+            initial={{y:50,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{delay:0.6,duration:1,type:"spring",stiffness:150}} 
+            className="mb-8 max-w-lg ">
               My name is Akash Pawar, I am a Full Stack Web Developer and Web
               Designer. An Open Source enthusiast and a Computer Science student
               from India.
-            </p>
-            <div className="flex mx-auto max-w-max gap-x-6 items-center mb-12">
+            </motion.p>
+            <motion.div 
+               initial={{y:50,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{delay:0.7,duration:1,type:"spring",stiffness:150}} 
+            className="flex mx-auto max-w-max gap-x-6 items-center mb-12">
               <button className="btn  btn-lg">Contact me</button>
               <a href="#" className="text-gradient btn-link">
                 My Portfolio
               </a>
-            </div>
-            <div className="flex text-[20px] gap-x-6 mx-auto max-w-max">
+            </motion.div>
+            <motion.div
+               initial={{y:50,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{delay:0.8,duration:1,type:"spring",stiffness:150}}  
+            className="flex text-[20px] gap-x-6 mx-auto max-w-max">
               <a href="https://www.linkedin.com/in/akash-pawar-516a74234/">
                 <FaLinkedin />
               </a>
@@ -65,12 +79,16 @@ const Banner = () => {
               <a href="https://twitter.com/l0rdsky34">
                 <FaTwitter />
               </a>
-            </div>
+            </motion.div>
           </div>
           {/*image*/}
-          <div className="hidden lg:flex flex-1]">
-            <img src={Image} />
-          </div>
+          <motion.div
+             initial={{y:-100,opacity:0}}
+            animate={{y:0,opacity:1}}
+            transition={{delay:0.6,duration:2,type:"spring",stiffness:100}} 
+           className="hidden lg:flex flex-1]">
+            <img src={Image} alt="My_image"/>
+          </motion.div>
         </div>
       </div>
     </section>
